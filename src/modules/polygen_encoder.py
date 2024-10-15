@@ -57,6 +57,7 @@ class PolygenEncoderLayer(TransformerEncoderLayer):
         src: torch.Tensor,
         src_mask: Optional[torch.Tensor] = None,
         src_key_padding_mask: Optional[torch.Tensor] = None,
+        is_causal = False
     ) -> torch.Tensor:
         """Forward method for the PolygenEncoderLayer
 
