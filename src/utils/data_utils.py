@@ -152,6 +152,7 @@ def process_and_save_mesh(
             f_add = 1
         else:
             f_add = 0
+    os.makedirs(os.path.dirname(file_path),exist_ok=True)
     with open(file_path, "w") as f:
         f.write('mtllib cad.mtl\n')
         for v in vertices:
